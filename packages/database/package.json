@@ -1,0 +1,30 @@
+{
+  "name": "@repo/database",
+  "private": true,
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/models/schema.ts"
+  },
+  "scripts": {
+    "db:up":"docker compose up -d",
+    "db:down":"docker compose down",
+    "db:generate": "dotenv -- drizzle-kit generate",
+    "db:migrate": "dotenv -- drizzle-kit migrate",
+    "dev": "dotenv -- drizzle-kit studio"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^0.45.2",
+    "pg": "^8.21.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.20.0",
+    "dotenv-cli": "^11.0.0",
+    "drizzle-kit": "^0.31.10",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}

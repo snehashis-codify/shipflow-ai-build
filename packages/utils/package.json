@@ -1,0 +1,20 @@
+{
+  "name": "@repo/utils",
+  "main": "index.js",
+  "private": true,
+  "type":"module",
+  "exports":{
+    ".":"./src/index.ts"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "zod": "^4.4.3"
+  }
+}

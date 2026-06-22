@@ -1,0 +1,25 @@
+{
+  "name": "@repo/auth",
+  "private": true,
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./src/auth.ts"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.0",
+  "devDependencies": {
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@repo/database": "workspace:*",
+    "better-auth": "^1.6.20",
+    "dotenv": "^17.4.2"
+  }
+}
