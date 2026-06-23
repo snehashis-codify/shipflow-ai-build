@@ -8,6 +8,13 @@
       "when": 1782082747992,
       "tag": "0000_lazy_mesmero",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1782231652095,
+      "tag": "0001_hard_ares",
+      "breakpoints": true
     }
   ]
 }

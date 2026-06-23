@@ -1,6 +1,7 @@
 import { headers } from "next/headers";
-import { createContext } from "../server/api/context";
-import { serverRouter } from "../server/api/root";
+import { createContext } from "./context";
+import { serverRouter } from "./routers/_app";
+
 
 export async function createCaller() {
   const ctx = await createContext({ headers: await headers() });

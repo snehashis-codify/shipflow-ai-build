@@ -5,7 +5,8 @@
   "type": "module",
   "exports": {
     ".": "./src/index.ts",
-    "./schema": "./src/models/schema.ts"
+    "./schema": "./src/models/schema.ts",
+    "./operator":"./src/operator.ts"
   },
   "scripts": {
     "db:up":"docker compose up -d",

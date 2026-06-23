@@ -1,7 +1,7 @@
 import { requireAuth } from "@/src/features/auth/actions";
-import React from "react";
+import React, { ReactNode } from "react";
 
-export default async function ProtectedLayout() {
+export default async function ProtectedLayout({children}:{children:ReactNode}) {
   await requireAuth();
-  return <div>layout</div>;
+  return <div>{children}</div>;
 }

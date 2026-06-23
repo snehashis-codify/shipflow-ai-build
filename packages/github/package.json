@@ -1,11 +1,10 @@
 {
-  "name": "@repo/auth",
+  "name": "@repo/github",
+  "type": "module",
   "private": true,
   "main": "index.js",
-  "type": "module",
   "exports": {
-    ".": "./src/auth.ts",
-    "./auth-client":"./src/auth-client.ts"
+    ".": "./src/index.ts"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,12 +14,12 @@
   "license": "ISC",
   "packageManager": "pnpm@10.33.0",
   "devDependencies": {
+    "@types/node": "^20.19.42",
     "tsx": "^4.22.4",
     "typescript": "^6.0.3"
   },
   "dependencies": {
-    "@repo/database": "workspace:*",
-    "better-auth": "^1.6.20",
-    "dotenv": "^17.4.2"
+    "dotenv": "^17.4.2",
+    "octokit": "^5.0.5"
   }
 }

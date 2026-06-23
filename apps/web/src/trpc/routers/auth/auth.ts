@@ -1,5 +1,4 @@
 import { auth } from "@repo/auth";
-import { publicProcedure, router } from "../trpc";
 import {
   githubSessionProviderInputSchema,
   githubSignInProviderInputSchema,
@@ -8,6 +7,7 @@ import {
   githubSessionProviderOutputSchema,
   githubSignInProviderOutputSchema,
 } from "./auth.output";
+import { publicProcedure, router } from "../../init";
 
 export const authRouter = router({
   githubSignInProvider: publicProcedure
@@ -25,7 +25,7 @@ export const authRouter = router({
       });
       return { url: result.url };
     }),
-  getGihubSessionProvider: publicProcedure
+  getGithubSessionProvider: publicProcedure
     .input(githubSessionProviderInputSchema)
     .output(githubSessionProviderOutputSchema)
     .query(async ({ ctx }) => {

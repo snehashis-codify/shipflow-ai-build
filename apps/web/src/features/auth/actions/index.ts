@@ -20,7 +20,7 @@ export async function signInWithGithub(formData: FormData) {
 
 export async function getServerSessions() {
   const caller = await createCaller();
-  return await caller.auth.getGihubSessionProvider();
+  return await caller.auth.getGithubSessionProvider();
 }
 
 export async function requireAuth(redirectTo = SIGN_IN_PATH) {
